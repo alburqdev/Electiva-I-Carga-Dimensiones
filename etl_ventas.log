@@ -1,0 +1,26 @@
+2025-12-03 19:58:51,432 - INFO - package: mysql.connector.plugins
+2025-12-03 19:58:51,433 - INFO - plugin_name: caching_sha2_password
+2025-12-03 19:58:51,433 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-12-03 19:58:51,455 - INFO - Conexión exitosa a la base de datos MySQL
+2025-12-03 19:58:51,455 - INFO - ============================================================
+2025-12-03 19:58:51,456 - INFO - INICIANDO PROCESO ETL - DATA WAREHOUSE VENTAS
+2025-12-03 19:58:51,456 - INFO - ============================================================
+2025-12-03 19:58:51,456 - INFO - Iniciando carga de DimCategoria...
+2025-12-03 19:58:51,579 - INFO - Iniciando carga de DimCliente...
+2025-12-03 19:58:56,755 - INFO - Iniciando carga de DimProducto...
+2025-12-03 19:59:02,126 - INFO - Iniciando carga de DimAlmacen...
+2025-12-03 19:59:02,170 - INFO - Iniciando carga de DimFecha...
+2025-12-03 19:59:12,277 - INFO - ============================================================
+2025-12-03 19:59:12,280 - INFO - ============================================================
+2025-12-03 19:59:12,282 - INFO - Conexión cerrada
+2025-12-03 20:46:03,600 - INFO - package: mysql.connector.plugins
+2025-12-03 20:46:03,607 - INFO - plugin_name: caching_sha2_password
+2025-12-03 20:46:03,608 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-12-03 20:46:03,635 - INFO - Conexión exitosa a la base de datos MySQL
+2025-12-03 20:46:03,641 - INFO - ============================================================
+2025-12-03 20:46:03,644 - INFO - INICIANDO PROCESO ETL - DATA WAREHOUSE VENTAS
+2025-12-03 20:46:03,644 - INFO - ============================================================
+2025-12-03 20:46:03,645 - INFO - Iniciando carga de DimCategoria...
+2025-12-03 20:46:03,694 - ERROR - Error en DimCategoria: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`dw_ventas`.`dimproducto`, CONSTRAINT `dimproducto_ibfk_1` FOREIGN KEY (`CategoriaKey`) REFERENCES `dimcategoria` (`CategoriaKey`))
+2025-12-03 20:46:03,708 - ERROR - Error en el proceso ETL: 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`dw_ventas`.`dimproducto`, CONSTRAINT `dimproducto_ibfk_1` FOREIGN KEY (`CategoriaKey`) REFERENCES `dimcategoria` (`CategoriaKey`))
+2025-12-03 20:46:03,730 - INFO - Conexión cerrada
